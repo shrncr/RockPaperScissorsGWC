@@ -1,0 +1,58 @@
+.options{
+    display: flex;
+    height: 50%;
+    width: 50%;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    
+    
+}
+.game{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+  }
+.options img{
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+
+}
+.options img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.options img:focus{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 247, 18, 0.996);
+}
+h1{
+    margin-top: 8vh;
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.shoot{
+    border-radius: 10px;
+    display: flex;
+    height: 50%;
+    width: fit-content;
+    height: fit-content;
+    font-size: 4em;
+    background-color:papayawhip;
+    border-color: rgba(201, 157, 104, 0.872);
+    border-radius: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#results{
+    display: none;
+}
