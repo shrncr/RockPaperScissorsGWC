@@ -61,7 +61,23 @@ function showWin(){ //screen says "you won" when you won
 }
 
 submitButton.addEventListener("click", rockPaperScissors) //listens for when the "shoot" button is clicked
+
 function rockPaperScissors(){ //girls will code this function during the meeting
-
+    const choices = ["rock", "paper", "scissors"];
+    const randomIndex = Math.floor(Math.random() * 3);
+    robotChoice = choices[randomIndex];
+ 
+    if (userSelection === robotChoice) {
+        showTie();
+    }
+    else if (
+        (userSelection === "rock" && robotChoice === "scissors") ||
+        (userSelection === "paper" && robotChoice === "rock") ||
+        (userSelection === "scissors" && robotChoice === "paper")
+    ) {
+        showWin();
+    }else{
+        showLose();
+    }
+    
 }
-
